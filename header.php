@@ -24,6 +24,10 @@
 
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic,700italic' rel='stylesheet' type='text/css'>
 
+<!-- Include FontAwesome icon font -->
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
 <?php wp_head(); ?>
 </head>
 
