@@ -6,9 +6,19 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+		<div ID="post-top">
+			<div class="post-image">
+				<?php if ( 'post' == get_post_type() ) : ?>
+				<?php if ( has_post_thumbnail() ) {
+					the_post_thumbnail();
+				}
+			?>
+			</div>
+			<div class="post-title">
+				<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+			</div>
+		</div>
 
-		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php brb_posted_on(); ?>
 		</div><!-- .entry-meta -->

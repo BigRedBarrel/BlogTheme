@@ -466,6 +466,18 @@ THEME CONTENT STARTS HERE
 	width: 100%;
 }
 
+.site-header {
+	background-color: #DCDCDB;
+	background-image: url('/wp-content/themes/brb/images/header_bg.jpg');
+	background-repeat: no-repeat;
+}
+
+#brb_logo {
+	margin: 10px 20px 10px 20px;
+	max-width: 20%;
+	-webkit-filter: drop-shadow(0px 0px 15px rgba(255,255,255,1.0));
+}
+
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
@@ -829,6 +841,7 @@ a:active {
 }
 .hentry {
 	margin: 0 0 1.5em;
+	padding: 0 1.5em 0 1.5em;
 }
 .byline,
 .updated {
@@ -869,6 +882,29 @@ a:active {
 	margin-top: 0;
 	padding: 0;
 }
+
+img.wp-post-image {
+	width: 100%;
+}
+
+#post-top {
+	position: relative;
+}
+
+.entry-header #post-top .post-title {
+	position: absolute;
+	top: 60%;
+	background-color: #000000;
+	padding: 10px 20px 10px 20px;
+	font-size: 2em;
+	font-weight: 300;
+}
+
+.entry-header #post-top .post-title a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
 .wp-caption {
 	border: 1px solid #ccc;
 	margin-bottom: 1.5em;
