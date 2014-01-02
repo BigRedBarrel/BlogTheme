@@ -40,12 +40,40 @@
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+<nav class="navbar navbar-default" role="navigation">
+<!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="<?php bloginfo('url')?>"><?php bloginfo('name')?></a>
+  </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <?php /* Primary navigation */
+		wp_nav_menu( array(
+			'menu' => 'top_menu',
+			'depth' => 2,
+			'container' => false,
+			'menu_class' => 'nav',
+			//Process nav menu using our custom nav walker
+			'walker' => new wp_bootstrap_navwalker())
+			);
+	?>
+  </div>
+</nav>
+
+
+		<!-- <nav id="site-navigation" class="navbar navbar-inverse" role="navigation">
 			<h1 class="menu-toggle"><?php _e( 'Menu', 'brb' ); ?></h1>
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'brb' ); ?></a>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
+		</nav> -->
+		<!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
