@@ -11,11 +11,14 @@
 				<?php if ( 'post' == get_post_type() ) : ?>
 				<?php if ( has_post_thumbnail() ) {
 					the_post_thumbnail();
-				}
-			?>
+					}
+				?>
 			</div>
 			<div class="post-title">
 				<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+			</div>
+			<div class="article-excerpt">
+				<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_excerpt(); ?></a>
 			</div>
 		</div>
 
@@ -24,22 +27,6 @@
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-	<?php else : ?>
-	<div class="entry-content">
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'brb' ) ); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'brb' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-	<?php endif; ?>
 
 	<footer class="entry-meta">
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>

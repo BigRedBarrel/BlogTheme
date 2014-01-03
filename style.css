@@ -869,7 +869,7 @@ a:active {
 }
 .hentry {
 	margin: 0 0 1.5em;
-	padding: 0 1.5em 0 1.5em;
+	padding: 0 1.5em 0 0;
 }
 .byline,
 .updated {
@@ -921,16 +921,45 @@ img.wp-post-image {
 
 .entry-header #post-top .post-title {
 	position: absolute;
-	top: 60%;
-	background-color: #000000;
+	bottom: 25%;
+	background-color: rgba(0,0,0,0.8);
 	padding: 10px 20px 10px 20px;
-	font-size: 2em;
+	font-size: 4em;
+	max-width: 90%;
 	font-weight: 300;
+}
+
+.entry-header #post-top .post-title:hover {
+	background-color: rgba(0,0,0,1.0);
 }
 
 .entry-header #post-top .post-title a {
 	text-decoration: none;
 	color: #FFFFFF;
+}
+
+.entry-header #post-top .article-excerpt {
+	position: absolute;
+	top: 77%;
+	background-color: rgba(0,0,0,0.8);
+	padding: 0px 20px 0px 20px;
+	font-size: 1.5em;
+	font-weight: 100;
+	max-width: 80%;
+}
+
+.entry-header #post-top .article-excerpt:hover {
+	background-color: rgba(0,0,0,1.0);
+}
+
+.entry-header #post-top .article-excerpt a {
+	text-decoration: none;
+}
+
+.entry-header #post-top .article-excerpt a p {
+	padding: 0 0 0 0;
+	margin: 5px 0 5px 0;
+	color: white;
 }
 
 .wp-caption {
