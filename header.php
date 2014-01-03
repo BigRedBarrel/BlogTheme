@@ -36,12 +36,17 @@
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
 		<img id="brb_logo" src="wp-content/themes/brb/images/brblogo.png" alt="BigRedBarrel"/>
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<h1 class="menu-toggle"><?php _e( 'Menu', 'brb' ); ?></h1>
-			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'brb' ); ?></a>
+		<div id="menu_bar">
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<h1 class="menu-toggle"><?php _e( 'Menu', 'brb' ); ?></h1>
+				<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'brb' ); ?></a>
 
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			</nav>
+			<div id="user_login">
+					<p><i class="fa fa-user fa-fw"></i>Login Dropdown Placeholder</p>
+			</div><!-- #site-navigation -->
+		</div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
