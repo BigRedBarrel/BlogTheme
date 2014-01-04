@@ -811,6 +811,7 @@ a:active {
 	margin: 5px 10px 5px 10px;
 }
 .main-navigation ul ul {
+	-webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	display: none;
 	float: left;
