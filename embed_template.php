@@ -18,6 +18,5 @@ the_content();
 <noscript>Please enable JavaScript to view the <a href="http://vanillaforums.com/?ref_noscript">discussions powered by Vanilla.</a></noscript>
 <div class="vanilla-credit"><a class="vanilla-anchor" href="http://vanillaforums.com">Discussions by <span class="vanilla-logo">Vanilla</span></a></div>
 
-<?php 
-
-get_footer();
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>

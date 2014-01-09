@@ -450,16 +450,17 @@ THEME CONTENT STARTS HERE
 
 .content-area {
 	float: left;
-	margin: 0 -25% 0 0;
+	margin: 0 -15% 0 0;
 	width: 100%;
 }
+
 .site-main {
-	margin: 0 25% 0 0;
+	margin: 0 15% 0 0;
 }
 .site-content .widget-area {
 	float: right;
 	overflow: hidden;
-	width: 25%;
+	width: 15%;
 }
 .site-footer {
 	clear: both;
@@ -767,13 +768,13 @@ a:active {
 	clear: both;
 	display: block;
 	float: left;
-	width: 75%;
+	width: 85%;
 	background-color: black;
 }
 
 #menu_bar #user_login {
 	float: right;
-	width: 25%;
+	width: 15%;
 	background-color: black;
 	text-align: left;
 	color: white;

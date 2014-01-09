@@ -46,7 +46,7 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav>
 			<div id="user_login">
-					<p><i class="fa fa-user fa-fw"></i>Login Dropdown Placeholder</p>
+					<p><i class="fa fa-user fa-fw"></i>Login Placeholder</p>
 			</div><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
