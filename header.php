@@ -20,6 +20,11 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 
+<!-- Enable LiveReload functionality - remove when finalised -->
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></'
++ 'script>')</script>
+
 <!-- <script src="/wp-content/themes/brb/js/brb-ui.js" type="text/javascript"></script> --> <!-- Placeholder for custom JQuery-UI -->
 
 <!-- Include Lato font -->
