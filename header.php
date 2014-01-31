@@ -42,7 +42,7 @@
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
-		<img id="brb_logo" src="wp-content/themes/brb/images/brblogo.png" alt="BigRedBarrel"/>
+		<img id="brb_logo" src="<?php echo get_template_directory_uri(); ?>/images/brblogo.png" alt="BigRedBarrel"/>
 		<div id="menu_bar">
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<h1 class="menu-toggle"><?php _e( 'Menu', 'brb' ); ?></h1>

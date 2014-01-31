@@ -469,7 +469,7 @@ THEME CONTENT STARTS HERE
 
 .site-header {
 	background-color: #DCDCDB;
-	background-image: url('/wp-content/themes/brb/images/header_bg.jpg');
+	background-image: url('./images/header_bg.jpg');
 	background-repeat: no-repeat;
 }
 
